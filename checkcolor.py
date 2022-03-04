@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt 
 
-# image  = np.random.randint(255,size=(4,4))
 image = cv2.imread('img/test3.png')
 plt.imshow(image,cmap='gray',vmin=0,vmax=255) 
 plt.show()

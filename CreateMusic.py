@@ -54,7 +54,6 @@ print(np.max(a_wave))  # 4096
 print(np.min(a_wave))  # -4096
 
 music_notes = 'C-C-G-G-A-A-G-F-F-E-E-D-D-C-G-G-F-F-E-E-D-G-G-F-F-E-E-D-C-C-G-G-A-A-G-F-F-E-E-D-D-C'
-# music_notes = 'D-f-D-A-A-D-F-D-A-A-D-F-D--A-A'
 data = get_song_data(music_notes)
 
 data = data * (16300/np.max(data))  # Adjusting the Amplitude (Optional)
