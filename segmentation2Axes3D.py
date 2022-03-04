@@ -5,7 +5,7 @@ from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
 from matplotlib import colors
 
-image = cv2.imread('test.jpg')
+image = cv2.imread('img/test3.png')
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) 
 
 r, g, b = cv2.split(image)

@@ -11,11 +11,11 @@ def get_wave(freq, duration=0.5):
     as the input and returns a "numpy array" of values at all points 
     in time
     '''
-
+    
     amplitude = 4096
     t = np.linspace(0, duration, int(samplerate * duration))
     wave = amplitude * np.sin(2 * np.pi * freq * t)
-
+    
     return wave
 
 
@@ -53,7 +53,7 @@ print(len(a_wave))  # 44100
 print(np.max(a_wave))  # 4096
 print(np.min(a_wave))  # -4096
 
-music_notes = 'C-C-G-G-A-A-G--F-F-E-E-D-D-C--G-G-F-F-E-E-D--G-G-F-F-E-E-D--C-C-G-G-A-A-G--F-F-E-E-D-D-C'
+music_notes = 'C-C-G-G-A-A-G-F-F-E-E-D-D-C-G-G-F-F-E-E-D-G-G-F-F-E-E-D-C-C-G-G-A-A-G-F-F-E-E-D-D-C'
 # music_notes = 'D-f-D-A-A-D-F-D-A-A-D-F-D--A-A'
 data = get_song_data(music_notes)
 
