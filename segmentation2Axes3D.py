@@ -11,7 +11,6 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 r, g, b = cv2.split(image)
 fig = plt.figure()
 axis = fig.add_subplot(1, 1, 1, projection="3d")
-
 pixel_colors = image.reshape((np.shape(image)[0]*np.shape(image)[1], 3))
 norm = colors.Normalize(vmin=-1., vmax=1.)
 norm.autoscale(pixel_colors)

@@ -75,6 +75,8 @@ def createNote(noteName="A4", type="sine", amp=0.5, beats=1.0, filter = None ,cu
         print("Applying high pass filter") 
     return audio 
 
+# example = createNote("A4", "sine", 0.5, 1.0, "lowPass", 1000, "example.wav") 
+
 #example note
 A4 = createNote(noteName="A4", type="sine", amp=1.0, beats=4.0, filter = None ,cutoff= None) 
 A4_trumpet = createNote(noteName="A4", type="trumpet", amp=1.0, beats=4.0, filter = None ,cutoff= None)
